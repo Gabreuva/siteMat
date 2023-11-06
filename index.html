@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>MathFriends</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+</head>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-blue w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <img src="math2.png" alt="Jane" style="width:100%">
+    <h3 class="w3-padding-8"><b>MathAmigos</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Início</a> 
+    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">1 ANO</a> 
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">2 ANO</a> 
+    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">3 ANO</a>
+    <a href="#packages2" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Diferenças entre os anos</a>  
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contato</a>
+    <a href="#sobre" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Sobre</a> </a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>MathAmigos</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>MathAmigos</b></h1>
+    <h1 class="w3-xxxlarge w3-text-blue"><b>O seu melhor site para estudos.</b></h1>
+    <hr style="width:50px;border:5px solid teal" class="w3-round">
+  </div>
+  
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="math8.jpg" style="width:100%" onclick="onClick(this)" alt="meu mano cozinhando informaçoes no cerebro">
+    </div>
+
+    <div class="w3-half">
+      <img src="math9.jpg" style="width:100%" onclick="onClick(this)" alt="https://www.youtube.com/watch?v=BBJa32lCaaY">
+      
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- ENSINO MEDIO -->
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-blue"><b>ENSINO MÉDIO</b></h1>
+    <hr style="width:50px;border:5px solid teal" class="w3-round">
+    <p>Ensino Médio no Brasil</p>
+    <p>Última etapa da Educação Básica no Brasil, o Ensino Médio tem três anos de duração e é recomendado – dentro das disposições <br>
+      da Base Nacional Curricular Comum (BNCC) – para adolescentes de 15 aos 17 anos. Essa fase tem como principal objetivo, além <br>
+      de aprofundar o aprendizado do Ensino Fundamental, formar os estudantes para o exercício da cidadania e prepara-los para os <br>
+      processos seletivos, como o Enem, de todo país.
+    </p>
+  </div>
+
+
+  <!-- 1 ANO -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-blue
+    "><b>1 ANO</b></h1>
+    <hr style="width:50px;border:5px solid #008080" class="w3-round">
+    <p>Primeiro Ano do Ensino Médio</p>
+    <p>O 1º ano do Ensino Médio é um período de transição marcado por diversos desafios <br>
+      para o estudante. Voltado para jovens de 15 anos, seu principal objetivo é desenvolver <br>
+      os conhecimentos obtidos durante o Ensino Fundamental. 
+      <br>
+      <br>
+      As sequências, progressões aritméticas e progressões geométricas também estão no programa.<br> 
+       A matemática financeira ganha reforços com os juros simples, compostos, descontos, taxas e <br> financiamentos
+    </p>
+
+    <img src="estudos.png" style="width:40%" onclick="onClick(this)" alt="adolescentes estudando lmfaooo">
+
+
+      
+  </div>
+  
+  <!-- 2 ANO -->
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-blue"><b>2 ANO</b></h1>
+    <hr style="width:50px;border:5px solid teal" class="w3-round">
+    <p>Segundo Ano do Ensino Médio</p>
+    <p>As leis dos senos, cossenos, circunferência trigonométrica, as equações e inequações trigonométricas, as <br> 
+      funções seno e cosseno. A geometria espacial ganha reforço com os poliedros e a relação de Euler; os prismas <br> 
+      e o princípio de Cavalieri, as pirâmides, cilindros, cones e esferas.
+    </p>
+
+    <img src="estudos2.jpg" style="width:40%" onclick="onClick(this)" alt="adolescentes estudando lmfaooo">
+
+
+  </div>
+
+  <!-- 3 ANO -->
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-blue"><b>3 ANO</b></h1>
+    <hr style="width:50px;border:5px solid teal" class="w3-round">
+    <p>Terceiro Ano do Ensino Médio</p>
+    <p>Essa fase tem como principal objetivo, além de aprofundar o aprendizado do Ensino Fundamental, formar os <br>
+      estudantes para o exercício da cidadania e prepara-los para os processos seletivos, como o Enem, de todo país.
+    <br>
+    <br>
+    Nesta etapa, alguns alunos buscam ingressar em cursos preparatórios para vestibular e ENEM para focar os seus <br>
+    estudos em determinados exames ou como forma de ampliação dos horizontes e conhecimentos que obtiveram <br>
+     durante os anos do Ensino Médio, com revisões, programas focados nos processos seletivos, simulados e aulões.
+    </p>
+
+    <img src="estudos3.png" style="width:40%" onclick="onClick(this)" alt="adolescentes estudando lmfaooo">
+
+  </div>
+
+
+  <!-- Packages / Pricing Tables -->
+  
+
+  <!-- Packages2 / Pricing Tables2 -->
+  <div class="w3-container" id="packages2" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-blue"><b>Diferenças entre os anos</b></h1>
+    <hr style="width:50px;border:5px solid teal" class="w3-round">
+    <p>No ensino médio ocorrem diversas mudanças de um ano para o outro e estar preparado para essas transições é essencial, portanto aqui estão listas das principais diferenças entre o primeiro, segundo e terceiro ano.</p>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-blue w3-xlarge w3-padding-32">1 ANO</li>
+        <li class="w3-padding-16">1° função (todos os tipos)</li>
+        <li class="w3-padding-16">Aritmética (pa/pg)</li>
+        <li class="w3-padding-16">Conjuntos</li>
+        <li class="w3-padding-16">Estatística</li>
+        <li class="w3-padding-16">Matemática financeira </li>
+        <li class="w3-padding-16">
+          <span class="w3-opacity ">VEJA NOSSA PLAYLIST COMPLETA NO LINK ABAIXO</span>
+          <p> 
+
+          </p>
+
+          <button class="w3-button W3-card w3-round w3-blue w3-padding-large w3-hover-black">
+            <a href="https://www.youtube.com/playlist?list=PL2SBH6UBAxIht9wk0UMC2rh1pCSfXx01t" target="_blank"><i class="fa fa-download"></i>Clique aqui!</a></button>
+
+        </li>
+      </ul>
+    </div>
+        
+    <div class="w3-third">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-blue w3-xlarge w3-padding-32">2 ANO</li>
+        <li class="w3-padding-16">2° matrix</li>
+        <li class="w3-padding-16">Probabilidade </li>
+        <li class="w3-padding-16">Análise combinatória</li>
+        <li class="w3-padding-16">Binômio de Nilton</li>
+        <li class="w3-padding-16">Trigonometria</li>
+        <li class="w3-padding-16">Geometria (plana e espacial)</li>
+        <li class="w3-padding-16">
+          <span class="w3-opacity ">VEJA NOSSA PLAYLIST COMPLETA NO LINK ABAIXO</span>
+          <p> 
+            
+          </p>
+          <button class="w3-button W3-card w3-round w3-blue w3-padding-large w3-hover-black">
+            <a href="https://www.youtube.com/playlist?list=PL2SBH6UBAxIgxaCFOJGcZl1quHqzECBq_" target="_blank"><i class="fa fa-download"></i>Clique aqui!</a></button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="w3-third">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-blue w3-xlarge w3-padding-32">3 ANO</li>
+        <li class="w3-padding-16">Geometria analítica</li>
+        <li class="w3-padding-16">Números complexos</li>
+        <li class="w3-padding-16">Polinômios</li>
+        <li class="w3-padding-16">(Revisão geral)</li>
+        <li class="w3-padding-16">
+          <span class="w3-opacity ">VEJA NOSSA PLAYLIST COMPLETA NO LINK ABAIXO</span>
+          <p> 
+            
+          </p>
+          <button class="w3-button W3-card w3-round w3-blue w3-padding-large w3-hover-black">
+            <a href="https://www.youtube.com/playlist?list=PL2SBH6UBAxIhv2t8Nsgbza-Ur30Y1lM4P" target="_blank"><i class="fa fa-download"></i>Clique aqui!</a></button>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  
+  <!-- Contact -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-blue"><b>Contatos.</b></h1>
+    <hr style="width:50px;border:5px solid teal" class="w3-round">
+    <p>Precisando de ajuda? Qualquer duvida entre em contato.</p>
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Nome</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Mensagem</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-blue w3-margin-bottom">Enviar Mensagem</button>
+    </form>  
+  </div>
+
+  <br>
+  <div class="w3-container" id="sobre" style="margin-top:75px">
+    <p><b>Principais Desenvolvedores do site.</b></p>
+  </div>
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="test2.png" alt="John" style="width:100%">
+        <div class="w3-container">
+          <h3>Gabriel Sacheto "Sazon" Dias</h3>
+          <p class="w3-opacity">Programador do site</p>
+          <p>Programador, ajudou na construção do site.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="test3.png" alt="Jane" style="width:100%">
+        <div class="w3-container">
+          <h3>Alice Calado Ferrero</h3>
+          <p class="w3-opacity">Escritora</p>
+          <p>Fez toda parte da escrita do site.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="test1.png" alt="Mike" style="width:100%">
+        <div class="w3-container">
+          <h3>Andre Henrique Rodrigues</h3>
+          <p class="w3-opacity">Programador</p>
+          <p>Deu as mais desnecessárias sugestões para o site!</p>
+        </div>
+      </div>
+    
+    </div>
+
+    <div>
+      <br>
+      <div class="w3-container" id="sobre" style="margin-top:75px">
+        <p><b>Outros participantes</b></p>
+      </div>
+    <div class="w3-row w3-padding w3-grayscale">
+      <div class="w3-col m4 w3-margin-bottom">
+        <div class="w3-lig  ht-grey">
+          <img src="test4.png" alt="John" style="width:100%">
+          <div class="w3-container">    
+            <h3>Joaquim "Quinn" Fernando Campos</h3>
+            <p class="w3-opacity">Programador do site</p>
+            <p>Programador, ajudou na construção do site.</p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col m4 w3-margin-bottom">
+        <div class="w3-light-grey">
+          <img src="test 5.png" alt="Jane" style="width:100%">
+          <div class="w3-container">
+            <h3>Evelly "Gaby"</h3>
+            <p class="w3-opacity">Pesquisadora</p>
+            <p>Pesquisou boa parte do site.</p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col m4 w3-margin-bottom">
+        <div class="w3-light-grey">
+          <img src="test6.png" alt="John" style="width:100%">
+          <div class="w3-container">    
+            <h3>Ana Haellyn Aguiar</h3>
+            <p class="w3-opacity">Pesquisadora</p>
+            <p>Elaborou as playlist.</p>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+
+  </div>
+  <br>
+</div>
+<br>
+
+<br>
+
+
+</div>
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<br>
+
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">Source</a></p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
